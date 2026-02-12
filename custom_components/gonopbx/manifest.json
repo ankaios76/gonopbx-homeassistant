@@ -1,0 +1,13 @@
+{
+  "domain": "gonopbx",
+  "name": "GonoPBX",
+  "codeowners": ["@ankaios76"],
+  "config_flow": true,
+  "dependencies": [],
+  "documentation": "https://github.com/ankaios76/gonopbx-homeassistant",
+  "iot_class": "local_polling",
+  "issue_tracker": "https://github.com/ankaios76/gonopbx-homeassistant/issues",
+  "mqtt": ["gonopbx/#"],
+  "requirements": ["aiohttp>=3.9.0"],
+  "version": "1.0.0"
+}

@@ -1,0 +1,38 @@
+make_call:
+  name: Make Call
+  description: Originate a phone call from an extension to a number.
+  fields:
+    extension:
+      name: Extension
+      description: The SIP extension to ring first (e.g. 1001).
+      required: true
+      example: "1001"
+      selector:
+        text:
+    number:
+      name: Number
+      description: The phone number or extension to call.
+      required: true
+      example: "004930123456"
+      selector:
+        text:
+
+toggle_forwarding:
+  name: Toggle Call Forwarding
+  description: Enable or disable call forwarding for an extension.
+  fields:
+    forward_id:
+      name: Forward ID
+      description: The ID of the call forwarding rule.
+      required: true
+      example: 1
+      selector:
+        number:
+          min: 1
+    enabled:
+      name: Enabled
+      description: Whether to enable or disable the forwarding.
+      required: true
+      example: true
+      selector:
+        boolean:

@@ -1,0 +1,23 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "GonoPBX verbinden",
+        "description": "Gib die Verbindungsdaten deiner GonoPBX-Instanz ein.",
+        "data": {
+          "host": "Host",
+          "port": "Port",
+          "api_key": "API-Schlüssel",
+          "use_mqtt": "MQTT aktivieren (Echtzeit-Events)"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Verbindung zu GonoPBX fehlgeschlagen. Prüfe Host, Port und API-Schlüssel.",
+      "unknown": "Unerwarteter Fehler aufgetreten."
+    },
+    "abort": {
+      "already_configured": "GonoPBX ist bereits konfiguriert."
+    }
+  }
+}
